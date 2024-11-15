@@ -10,6 +10,7 @@ vector<string> read_strings(const string& filename)
     vector<string> strings;
     // Здесь будет код для чтения строк из файла
     //
+    //
     /*ifstream input(filename);
     if (input.is_open())
     {
