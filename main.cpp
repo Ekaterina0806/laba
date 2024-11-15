@@ -32,19 +32,35 @@ vector<string> read_strings(const string& filename)
         cout << str << endl;
     }*/
   
+
     return strings;
 }
 
 // Функция для вывода строк на экран
 void print_strings(const vector<string>& strings)
 {
-    // Здесь будет код для вывода строк на экран
+    for (const auto& str : strings)
+    {
+        cout << str << endl;
+    }
 }
 
 // Функция для записи строк в файл
 void write_strings(const vector<string>& strings, const string& filename)
 {
     // Здесь будет код для записи строк в файл
+    ofstream outputFile(filename);
+    if (outputFile.is_open())
+        {
+        for (const auto& str : strings)
+            {
+            outputFile << str << endl;
+            }
+        outputFile.close();
+        }
+    else {
+        cout << "Ошибка открытия файла " << filename << endl;
+    }
 }
 
 int main() {
