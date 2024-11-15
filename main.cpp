@@ -9,7 +9,8 @@ vector<string> read_strings(const string& filename)
 {
     vector<string> strings;
     // Здесь будет код для чтения строк из файла
-    ifstream input(filename);
+    //
+    /*ifstream input(filename);
     if (input.is_open())
     {
         string line;
@@ -25,7 +26,7 @@ vector<string> read_strings(const string& filename)
         cout << "Ошибка открытия файла " << filename << endl;
     }
 
-    /*for (const auto& str : strings)
+    for (const auto& str : strings)
     {
         cout << str << endl;
     }*/
