@@ -26,7 +26,18 @@ void print_strings(const vector<string>& strings)
 void write_strings(const vector<string>& strings, const string& filename)
 {
     // Здесь будет код для записи строк в файл
-    //
+    ofstream outputFile(filename);
+    if (outputFile.is_open())
+        {
+        for (const auto& str : strings)
+            {
+            outputFile << str << endl;
+            }
+        outputFile.close();
+        }
+    else {
+        cout << "Ошибка открытия файла " << filename << endl;
+    }
 }
 
 int main() {
