@@ -31,6 +31,7 @@ vector<string> read_strings(const string& filename)
     {
         cout << str << endl;
     }*/
+  
     return strings;
 }
 
