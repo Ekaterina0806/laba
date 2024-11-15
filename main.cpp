@@ -9,41 +9,24 @@ vector<string> read_strings(const string& filename)
 {
     vector<string> strings;
     // Здесь будет код для чтения строк из файла
-
-    vector<string> strings;
-    ifstream input(filename);
-    if (input.is_open())
-    {
-        string line;
-        while (getline(input, line))
-        {
-            strings.push_back(line);
-        }
-        inputFile.close();
-//ооооо
-    } else
-    {
-        cout << "Ошибка открытия файла " << filename << endl;
-    }
-    return strings;
-
-    for (const auto& str : strings)
-    {
-        cout << str << endl;
-    }
+    //
     return strings;
 }
 
 // Функция для вывода строк на экран
 void print_strings(const vector<string>& strings)
 {
-    // Здесь будет код для вывода строк на экран
+    for (const auto& str : strings)
+    {
+        cout << str << endl;
+    }
 }
 
 // Функция для записи строк в файл
 void write_strings(const vector<string>& strings, const string& filename)
 {
     // Здесь будет код для записи строк в файл
+
 }
 
 int main() {
