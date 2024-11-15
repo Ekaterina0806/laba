@@ -11,7 +11,7 @@ vector<string> read_strings(const string& filename)
     // Здесь будет код для чтения строк из файла
     //
     //
-    /*ifstream input(filename);
+    ifstream input(filename);
     if (input.is_open())
     {
         string line;
@@ -30,8 +30,8 @@ vector<string> read_strings(const string& filename)
     for (const auto& str : strings)
     {
         cout << str << endl;
-    }*/
-  
+    }
+
 
     return strings;
 }
