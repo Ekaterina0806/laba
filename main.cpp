@@ -26,7 +26,6 @@ void print_strings(const vector<string>& strings)
 void write_strings(const vector<string>& strings, const string& filename)
 {
     // Здесь будет код для записи строк в файл
-    //
 }
 
 int main() {
