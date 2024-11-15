@@ -19,15 +19,16 @@ vector<string> read_strings(const string& filename)
         }
         input.close();
 
-    } else
+    }
+    else
     {
         cout << "Ошибка открытия файла " << filename << endl;
     }
 
-    for (const auto& str : strings)
+    /*for (const auto& str : strings)
     {
         cout << str << endl;
-    }
+    }*/
     return strings;
 }
 
